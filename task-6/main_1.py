@@ -124,7 +124,7 @@ while dead == False:
                     command = input('Якщо хочеш вилікуватися введи цифру 1: ')
                     if command == '1':
                         print('Вітаю. Ти можеш переходити на нову вулицю, але будь обережним, тепер у тебе немає аптечки...')
-                        del backpack['Support']
+                        backpack['Support'].remove('Аптечка')
                         if items:
                             items.describe()
                             command = input("Якщо хочеш взяти предмет введи цифру 1: ")
